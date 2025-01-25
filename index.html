@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Homepage</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Onest, sans-serif;
+        }
+
+        /* Navigation bar styling */
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #a20000; /* Red background */
+            padding: 10px 20px;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: black;
+            display: flex;
+            align-items: center;
+        }
+
+        .logo img {
+            height: 40px;
+            margin-right: 10px;
+        }
+
+        .menu {
+            display: flex;
+            gap: 20px;
+        }
+
+        .menu a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        .menu a:hover {
+            color: black;
+        }
+
+        /* Homepage section styling */
+        .homepage {
+            position: relative;
+            height: 100vh;
+            background: url("Material/Faeiq's icon(blue).jpg") no-repeat center center/cover;
+            display: flex;
+            align-items: center;
+
+        }
+
+        .homepage .content {
+            position: relative;
+            z-index: 2;
+		    text-align: left; /* Align text to the left */
+            max-width: 600px; /* Optional: Limit text width */
+            margin-left: 50px; /* Add spacing from the left edge */
+            color: white; /* Text color */
+        }
+
+        .homepage .content h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+        }
+
+        .homepage .content p {
+            font-size: 1.2rem;
+            margin: 0;
+        }
+
+        /* Optional: Dark overlay effect */
+        .homepage::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            z-index: 1;
+        }
+    </style>
+    <link href="style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <div class="navbar">
+        <div class="logo">
+            <img src="Material/faeiq's logo (black).png" alt="Logo">
+        </div>
+        <div class="menu">
+            <a href="#home">HOME</a>
+            <a href="#about">ABOUT</a>
+            <a href="#career">CAREER</a>
+            <a href="#artwork">ARTWORK</a>
+            <a href="#contact">CONTACT</a>
+        </div>
+    </div>
+    <section id="home" class="home-section">
+    <section class="homepage">
+        <div class="content">
+            <h1>HI, I'M FAEIQ NAJAT</h1>
+            <p>WELCOME TO MY WEBSITE THAT IS FULL OF MY CAREER JOURNEY AND PORTFOLIO</p>
+        </div>
+    </section>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Global Styles */
+        body {
+            margin: 0;
+            font-family: Onest, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f4f4f4;
+        }
+
+        h1, h2 {
+            margin: 0 0 10px;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        h2 {
+            font-size: 1.5rem;
+            text-align: center;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 900px;
+            margin: 0 auto;
+            background: #fff;
+            padding: 20px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+
+        .profile {
+            text-align: center;
+        }
+
+        .profile img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin-bottom: 15px;
+        }
+
+        .bio {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        .bio h2 {
+            font-size: 1.25rem;
+            margin-bottom: 5px;
+        }
+
+        .bio p {
+            font-size: 1rem;
+            color: #555;
+        }
+
+        .content-section {
+            margin-top: 30px;
+        }
+
+        .content-section p {
+            margin-bottom: 15px;
+        }
+
+        .content-section img {
+            width: 100%;
+            max-width: 250px;
+            border-radius: 10px;
+            margin-right: 20px;
+        }
+
+        .flex-row {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .flex-row img {
+            align-self: center;
+        }
+
+        .text {
+            flex: 1;
+        }
+
+        .footer {
+            text-align: center;
+            font-size: 0.9rem;
+            margin-top: 20px;
+            color: #888;
+        }
+    </style>
+</head>
+<body>
+	<section id="about" class="about-section">
+    <div class="container">
+        <h1>ABOUT ME</h1>
+        <div class="profile">
+            <img src="Material/3.5cmx4cm UiTM.jpg" alt="Faeiq Najat">
+            <h2>FAEIQ BIN NAJAT AFFENDY</h2>
+            <p>Content Creator</p>
+        </div>
+        <div class="bio">
+            <p>Hello! I'm Faeiq bin Najat Affendy, AKA as Faeiq Najat. I was born in Kajang, Selangor on 17 July 2005. I currently reside in Puncak Alam, Selangor.</p>
+        </div>
+        <div class="content-section">
+            <p>I'm notably known for creating content videos on YouTube. I started making content for fun back in 2018. It started off as a video gameplay about Driveclub, but ever since then I’ve shifted my focus towards making reviews of items such as video game controllers, consoles, gadgets and anything related to them.</p>
+            <div class="flex-row">
+                <img src="Material/WhatsApp Image 2025-01-14 at 23.42.27_97a07258.jpg" alt="Gaming Content">
+                <div class="text">
+                    <p>In 2024, I pursue my studies in UiTM Alor Gajah taking Communication Technology Digital Media Diploma. I have mastered my skill of editing, graphic designing and website programming during my studies.</p>
+                </div>
+            </div>
+            <p>Other than being a content creator, I am also a businessman selling merchandise, such as shirts, caps and many more. It’s all began from my parts of the huge milestones like advertising, popularity gaining, and small businesses.</p>
+        </div>
+    </div>
+
+<section id="career" class="career-section">
+    <h1>MY CAREER</h1>
+	
+    <div class="career-container">
+        <div class="career-item">
+            <img src="Material/Media Player 14_8_2024 11_18_53 AM.png" alt="Content Creator">
+            <div>
+                <h2>Life as a Content Creator</h2>
+                <p>I first started content creating at the age of 13 when my first video on YouTube was a Quick Play video of Driveclub plays on my cousin’s PlayStation 4.</p>
+            </div>
+        </div>
+        <div class="career-item">
+            <img src="Material/IMG-20231216-WA0005.jpg" alt="Diploma Student">
+			<div>
+                <h2>Life as a Diploma Student</h2>
+                <p>I started venturing myself into Communication Technology Digital Media Diploma in UiTM Alor Gajah in March 2024. Before I got into this program, it all started with the interview process for my Pre-Diploma studies at UiTM Seri Iskandar in September 2023.</p>
+            
+        </div>
+        <div class="career-item">
+            <img src="Material/IMG_20240119_112519.jpg" alt="Entrepreneur">
+            <div>
+                <h2>Life as an Entrepreneur</h2>
+                <p>I started my business career through my knowledge about marketing strategies and my creativity in branding my merchandise.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="artwork" class="artwork-section">
+    <h1>MY ARTWORK</h1>
+    <p>These are my artwork that I’ve done so far. Most of the work are from Adobe Photoshop, where I usually use it to create my YouTube video’s thumbnails.</p>
+    <div class="artwork-container">
+        <div class="artwork-item"><img src="Material/bloom & latte design.jpg" alt="Artwork 1"></div>
+        <div class="artwork-item"><img src="../faeiq isolation room.png" alt="Artwork 2"></div>
+        <div class="artwork-item"><img src="Material/(FAEIQ BIN NAJAT AFFENDY_2024765011_MC1121A).png" alt="Artwork 3"></div>
+		<div class="artwork-item"><img src="Material/Faeiq's icon(red).jpg" alt="Artwork 4"></div>
+        <div class="artwork-item"><img src="Material/gta tbogt thumb..jpg" alt="Artwork 5"></div>
+        <div class="artwork-item"><img src="Material/WhatsApp Image 2024-12-28 at 15.55.25_1961779c.jpg" alt="Artwork 6"></div>
+        <div class="artwork-item"><img src="Material/Stream thumb..jpg" alt="Artwork 7"></div>
+        <div class="artwork-item"><img src="Material/WhatsApp Image 2024-12-28 at 15.55.24_63fecb19.jpg" alt="Artwork 8"></div>
+        
+    </div>
+</section>
+
+<section id="contact" class="contact-section">
+    <h1>CONTACT</h1>
+    <div class="contact-info">
+        <p><img src="Material/gmail.png" alt="Email Icon"> faeiqnajatbusiness@gmail.com</p>
+        <p><img src="Material/telephone-call.png" alt="Phone Icon"> 011-12345678</p>
+    </div>
+    <div class="social-links">
+        <h2>FOLLOW US ON:</h2>
+        <a href="https://facebook.com" target="_blank"><img src="Material/facebook.png" alt="Facebook"></a>
+        <a href="https://instagram.com" target="_blank"><img src="Material/instagram.png" alt="Instagram"></a>
+        <a href="https://youtube.com" target="_blank"><img src="Material/youtube.png" alt="YouTube"></a>
+        <a href="https://twitter.com" target="_blank"><img src="Material/twitter.png" alt="Twitter"></a>
+    </div>
+    <form class="contact-form" action="#" method="post">
+        <input type="text" name="name" placeholder="Name" required>
+        <input type="email" name="email" placeholder="Email" required>
+        <textarea name="message" placeholder="Message" rows="5" required></textarea>
+        <button type="submit">Submit</button>
+		<div class="footer">
+        &copy; 2025 Faeiq Najat. All rights reserved.<script type="text/javascript" src="portfoliojs.js"></script>
+    <div>
+		
+    <!-- Add JavaScript for Smooth Scrolling -->
+    <script>
+        document.querySelectorAll('.menu a').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href').substring(1);
+                const targetSection = document.getElementById(targetId);
+
+                if (targetSection) {
+                    targetSection.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
